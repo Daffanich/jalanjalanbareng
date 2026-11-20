@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Undangan Jalan-jalan Keluarga Suwono</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sky:#8fd3e8; --sky2:#ffe9b8; --sea:#1f8fa8; --sea-deep:#0e5c73; --sand:#f6e3b4;
+  --coral:#f2745b; --sun:#ffc247; --leaf:#3e8e57; --ink:#12404f; --bg:#fff6df; --card:#fffdf6; --line:#e6cf98;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0f2a33; --card:#16394a; --ink:#f3ecd6; --line:#2d5a6b}
+}
+:root[data-theme="dark"]{--bg:#0f2a33; --card:#16394a; --ink:#f3ecd6; --line:#2d5a6b}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Nunito',system-ui,sans-serif;font-size:17px;line-height:1.5}
+.hero{position:relative;min-height:100svh;overflow:hidden;background:linear-gradient(#8fd3e8 0%,#c9ecf0 45%,#ffe9b8 100%);text-align:center;padding:36px 20px 0}
+.hero h1{font-family:'Baloo 2',sans-serif;font-weight:800;color:#0e5c73;font-size:clamp(34px,8vw,68px);line-height:1.02;margin:0 auto;max-width:14ch;position:relative;z-index:2}
+.hero p{position:relative;z-index:2;margin:12px auto 0;font-weight:700;color:#0e5c73;font-size:clamp(17px,3.4vw,24px)}
+.date{display:inline-block;background:#f2745b;color:#fff;border-radius:999px;padding:6px 20px;margin-top:14px;font-family:'Baloo 2',sans-serif;font-weight:600;font-size:clamp(18px,3.6vw,26px);position:relative;z-index:2;transform:rotate(-2deg)}
+.scene{position:absolute;left:0;bottom:0;width:100%;height:68%;display:block}
+main{max-width:640px;margin:0 auto;padding:44px 20px 56px}
+h2{font-family:'Baloo 2',sans-serif;font-size:32px;margin:0 0 4px}
+.sub{margin:0 0 28px;opacity:.8}
+ol{list-style:none;margin:0;padding:0 0 0 26px;border-left:3px dashed var(--sea)}
+li{position:relative;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:12px 16px;margin:0 0 14px}
+li::before{content:"";position:absolute;left:-37px;top:20px;width:16px;height:16px;border-radius:50%;background:var(--coral);border:3px solid var(--bg)}
+li.go::before{background:var(--sea)} li.fun::before{background:var(--sun)}
+.t{font-family:'Baloo 2',sans-serif;font-weight:800;font-size:20px;color:var(--sea-deep)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t{color:#8fd3e8}}
+:root[data-theme="dark"] .t{color:#8fd3e8}
+.a{font-size:18px}
+footer{text-align:center;padding:0 20px 48px;font-family:'Baloo 2',sans-serif;font-size:24px;font-weight:600}
+.sun-rays{transform-origin:110px 95px;animation:spin 40s linear infinite}
+.cloud{animation:drift 60s linear infinite}.cloud.b{animation-duration:80s;animation-delay:-30s}
+.wave{animation:sway 6s ease-in-out infinite alternate}.wave.b{animation-duration:8s;animation-direction:alternate-reverse}
+.walker{animation:walk 22s linear infinite}
+.leg{transform-box:fill-box;transform-origin:50% 0;animation:swing .8s ease-in-out infinite alternate}
+.leg.r{animation-direction:alternate-reverse}
+.run .leg{animation-duration:.22s}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes drift{from{transform:translateX(-260px)}to{transform:translateX(1100px)}}
+@keyframes sway{from{transform:translateX(-40px)}to{transform:translateX(40px)}}
+@keyframes walk{from{transform:translateX(-300px)}to{transform:translateX(1000px)}}
+@keyframes swing{from{transform:rotate(26deg)}to{transform:rotate(-26deg)}}
+@media (prefers-reduced-motion:reduce){.sun-rays,.cloud,.wave,.walker,.leg{animation:none}.walker{transform:translateX(120px)}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <h1>Jalan-jalan Bareng Keluarga Suwono</h1>
+  <p>Ke Pantai Gunungkidul</p>
+  <span class="date">Sabtu, 5 Desember 2026</span>
+  <svg class="scene" viewBox="0 0 800 460" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Keluarga berjalan di pantai, dua anak berlari mengelilingi pohon">
+    <g class="sun-rays" stroke="#ffc247" stroke-width="6" stroke-linecap="round">
+      <circle cx="110" cy="95" r="34" fill="#ffc247" stroke="none"/>
+      <path d="M110 40v-16M110 150v16M55 95H39M165 95h16M71 56l-11-11M149 134l11 11M71 134l-11 11M149 56l11-11"/>
+    </g>
+    <g fill="#fff" opacity=".9">
+      <g class="cloud"><ellipse cx="200" cy="60" rx="46" ry="14"/><ellipse cx="228" cy="48" rx="28" ry="14"/></g>
+      <g class="cloud b"><ellipse cx="420" cy="110" rx="56" ry="15"/><ellipse cx="446" cy="97" rx="30" ry="14"/></g>
+    </g>
+    <rect y="170" width="800" height="110" fill="#1f8fa8"/>
+    <g fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".75">
+      <path class="wave" d="M-60 200q30-14 60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0"/>
+      <path class="wave b" d="M-60 232q30-14 60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0t60 0"/>
+    </g>
+    <path d="M0 270q200-24 400-6t400-6V460H0z" fill="#f6e3b4"/>
+    <path d="M0 290q200-20 400-4t400-4v14q-200-10-400 4T0 304z" fill="#fff" opacity=".55"/>
+    <g id="back"></g>
+    <g id="tree">
+      <path d="M548 410q4-70-6-110h36q-10 40-6 110z" fill="#8a5a3c"/>
+      <circle cx="530" cy="290" r="52" fill="#3e8e57"/><circle cx="590" cy="280" r="56" fill="#4aa066"/><circle cx="560" cy="240" r="54" fill="#3e8e57"/>
+    </g>
+    <g id="front"></g>
+    <g id="walkers"></g>
+  </svg>
+</header>
+<main>
+  <h2>Rundown acara</h2>
+  <p class="sub">Siapkan baju ganti, topi, dan semangat main pasir.</p>
+  <ol>
+    <li><div class="t">06.00–07.00</div><div class="a">Sarapan bersama</div></li>
+    <li class="go"><div class="t">07.00–08.30</div><div class="a">Perjalanan ke Pantai 1</div></li>
+    <li class="fun"><div class="t">08.30–10.30</div><div class="a">Bebas main di pantai</div></li>
+    <li class="go"><div class="t">10.30–11.00</div><div class="a">Menuju Pantai 2</div></li>
+    <li class="fun"><div class="t">11.00–14.00</div><div class="a">Makan, games, dan main di pantai</div></li>
+    <li class="fun"><div class="t">14.30–16.00</div><div class="a">Bebas main di pantai</div></li>
+    <li class="go"><div class="t">17.00–18.30</div><div class="a">Perjalanan pulang</div></li>
+  </ol>
+</main>
+<footer>Ditunggu ya, seluruh keluarga Suwono!</footer>
+<script>
+function person(x,y,s,body,hair,cls){
+  return '<g class="'+(cls||'')+'" transform="translate('+x+','+y+') scale('+s+')">'+
+    '<line class="leg" x1="-4" y1="-30" x2="-4" y2="0" stroke="#3b4a5a" stroke-width="6" stroke-linecap="round"/>'+
+    '<line class="leg r" x1="4" y1="-30" x2="4" y2="0" stroke="#3b4a5a" stroke-width="6" stroke-linecap="round"/>'+
+    '<rect x="-11" y="-62" width="22" height="36" rx="9" fill="'+body+'"/>'+
+    '<circle cx="0" cy="-72" r="10" fill="#f3c9a0"/><path d="M-10-74a10 10 0 0120 0z" fill="'+hair+'"/></g>';
+}
+var W=document.getElementById('walkers');
+W.innerHTML='<g class="walker">'+
+  person(0,440,1.15,'#0e5c73','#2b2118')+
+  person(44,440,1.05,'#f2745b','#4a2a1a')+
+  person(80,440,.62,'#ffc247','#2b2118')+'</g>';
+var back=document.getElementById('back'),front=document.getElementById('front');
+var kids=[{c:'#f2745b',a:0,sp:1},{c:'#ffc247',a:Math.PI,sp:1}].map(function(k){
+  var g=document.createElementNS('http://www.w3.org/2000/svg','g');
+  g.innerHTML=person(0,0,1,k.c,'#2b2118','run').replace(/^<g[^>]*>|<\/g>$/g,'');
+  k.el=g;back.appendChild(g);k.par=back;return k;});
+var cx=563,cy=418,rx=118,ry=26,still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function frame(t){
+  kids.forEach(function(k,i){
+    var a=k.a+(still?0:t/1000*1.6);
+    var sn=Math.sin(a),x=cx+rx*Math.cos(a),y=cy+ry*sn,sc=.62+.14*sn;
+    k.el.setAttribute('transform','translate('+x+','+y+') scale('+sc+')');
+    var p=sn>0?front:back;if(p!==k.par){p.appendChild(k.el);k.par=p}
+  });
+  if(!still)requestAnimationFrame(frame);
+}
+requestAnimationFrame(frame);
+</script>
+</body>
+</html>
