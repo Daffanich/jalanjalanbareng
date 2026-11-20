@@ -35,6 +35,12 @@ li.go::before{background:var(--sea)} li.fun::before{background:var(--sun)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t{color:#8fd3e8}}
 :root[data-theme="dark"] .t{color:#8fd3e8}
 .a{font-size:18px}
+.intro{font-size:19px;text-align:center;margin:0 0 40px;padding:0 6px}
+.note{margin-top:36px;background:var(--card);border:2px dashed var(--coral);border-radius:20px;padding:18px 20px}
+.note h2{font-size:26px;margin-bottom:10px}
+.note ul{list-style:none;margin:0;padding:0}
+.note li{background:none;border:0;border-radius:0;margin:0;padding:6px 0 6px 30px}
+.note li::before{content:"";left:0;top:12px;width:14px;height:14px;background:var(--leaf);border:0;border-radius:50% 0 50% 0}
 footer{text-align:center;padding:0 20px 48px;font-family:'Baloo 2',sans-serif;font-size:24px;font-weight:600}
 .sun-rays{transform-origin:110px 95px;animation:spin 40s linear infinite}
 .cloud{animation:drift 60s linear infinite}.cloud.b{animation-duration:80s;animation-delay:-30s}
@@ -82,6 +88,7 @@ footer{text-align:center;padding:0 20px 48px;font-family:'Baloo 2',sans-serif;fo
   </svg>
 </header>
 <main>
+  <p class="intro">Kebersamaan bukan soal ke mana kita pergi, tapi siapa yang duduk di sebelah kita. Yuk, sisihkan satu hari untuk tertawa bareng, main pasir, dan mendengar suara ombak.</p>
   <h2>Rundown acara</h2>
   <p class="sub">Siapkan baju ganti, topi, dan semangat main pasir.</p>
   <ol>
@@ -93,8 +100,17 @@ footer{text-align:center;padding:0 20px 48px;font-family:'Baloo 2',sans-serif;fo
     <li class="fun"><div class="t">14.30–16.00</div><div class="a">Bebas main di pantai</div></li>
     <li class="go"><div class="t">17.00–18.30</div><div class="a">Perjalanan pulang</div></li>
   </ol>
+  <section class="note">
+    <h2>Catatan</h2>
+    <ul>
+      <li>Membawa perlengkapan pribadi</li>
+      <li>Menggunakan pakaian nyaman</li>
+      <li>Menjaga kebersamaan dan kekompakan</li>
+      <li>Menjaga kebersihan pantai</li>
+    </ul>
+  </section>
 </main>
-<footer>Ditunggu ya, seluruh keluarga Suwono!</footer>
+<footer>Pantai boleh jauh, asal perginya bareng-bareng.<br>Sampai ketemu di Gunungkidul, keluarga Suwono!</footer>
 <script>
 function person(x,y,s,body,hair,cls){
   return '<g class="'+(cls||'')+'" transform="translate('+x+','+y+') scale('+s+')">'+
